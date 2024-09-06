@@ -10,7 +10,6 @@ public class exerc9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Entrada de dados
         System.out.println("Digite o comprimento do lado X: ");
         double x = scanner.nextDouble();
 
@@ -20,9 +19,7 @@ public class exerc9 {
         System.out.println("Digite o comprimento do lado Z: ");
         double z = scanner.nextDouble();
 
-        // Verificando se os lados formam um triângulo
         if (x + y > z && x + z > y && y + z > x) {
-            // Os lados formam um triângulo, então vamos verificar o tipo
             if (x == y && y == z) {
                 System.out.println("O triângulo é equilátero.");
             } else if (x == y || y == z || x == z) {
@@ -31,7 +28,6 @@ public class exerc9 {
                 System.out.println("O triângulo é escaleno.");
             }
         } else {
-            // Os lados não formam um triângulo
             System.out.println("Os valores informados não formam um triângulo.");
         }
 
